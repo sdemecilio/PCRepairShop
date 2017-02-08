@@ -12,20 +12,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
  */
 
- include ('indexMenu.php');
+ include ('menu.php');
 ?>
 <html>
 <head>
     <title>GR Repair Shop</title>
 <!-- CSS libraries -->
-<link rel = "stylesheet" href = "dependencies/css/RepairShop.css">
+<link rel = "stylesheet" href = "css/RepairShop.css">
 <!--<link rel = "stylesheet" href = "css/home.css">-->
 <link rel = "stylesheet" href = "//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
 
-<img src = "dependencies/images/grcRepairLogo.jpg" class = "logo">
+<img src = "images/grcRepairLogo.jpg" class = "logo">
 
 <form action="">
     <p>Is your computer under warranty?</p>
@@ -40,13 +40,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 </form>
 
 <p id = "errorMessage" class = "requiredFields">We cannot work on your computer. Please see a tech for questions.</p>
-<button> <a href = "models/policy.php">Procced to paperwork</a></button>
+<button> <a href = "policy.php">Procced to paperwork</a></button>
 
 
 <!-- including the jquery library from the jquery website -->
 <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src = "dependencies/javascript/RepairShop.js"></script>
+<script src = "javascript/RepairShop.js"></script>
 
 </body>
 

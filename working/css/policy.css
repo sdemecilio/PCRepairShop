@@ -22,13 +22,12 @@ body {
     font-style: italic;
     color: darkgreen;
 }
+#errors{
+    color: red;
+}
 
 /* image styling */
 .logo {
-    width: 25%;
-    display: block;
-}
-
-.star {
-    width: 2%;
+    height: 75%;
+    align: center;
 }

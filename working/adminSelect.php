@@ -23,13 +23,12 @@ $dbname="pcrepair_shop";
     $stmt->setFetchMode(PDO::FETCH_OBJ); 
    //$stmt->execute();
    
-     echo "<a href = '../index.php'>Logout</a>";
-	  
+     
      $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 	  echo"<table>";
-	  echo "<tr>";
+	  echo "<tr";
 	  echo"<th>ORDER</th><br>";
-	  echo"<th colspan = 2>NAME</th><br>";
+	  echo"<th>NAME</th><br>";
 	  echo"<th>DATE</th>";
 	  echo"<tr>";
      
@@ -37,7 +36,6 @@ $dbname="pcrepair_shop";
         echo "<tr>";
 		  echo "<td>". $row['workOrderID'] ."</td>";
 		  echo "<td>". $row['first_name']."</td>";
-		  echo "<td>" . $row['last_name'] . "</td>";
 		  echo "<td>".$row['timestamp']."</td>";
 		  echo "</tr>";
 //		  $row['greenriverID'] . ' &nbsp' .  $row['issues'] . ', '

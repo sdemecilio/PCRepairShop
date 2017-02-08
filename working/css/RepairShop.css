@@ -2,6 +2,7 @@ body {
     width: 75%;
     padding: 5px;
     margin: auto auto 5%;
+    font-family: "Lato", sans-serif;
 }
 
 .title {
@@ -23,8 +24,18 @@ body {
     color: darkgreen;
 }
 
-/* image styling */
+header{
+	width:100%; 
+	background:#1d1f20; 
+	height:60px; 
+	line-height:60px;
+}
+
 .logo {
-    height: 75%;
-    align: center;
+    width: 25%;
+    display: block;
+}
+
+.star {
+    width: 2%;
 }

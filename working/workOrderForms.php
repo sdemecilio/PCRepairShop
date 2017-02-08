@@ -133,7 +133,7 @@ include 'workCon.php';
         <!-- CSS libraries -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <link rel = "stylesheet" href="../dependencies/css/policy.css">
+        <link rel = "stylesheet" href = "policy.css">
 
     </head>
 
@@ -339,6 +339,6 @@ include 'workCon.php';
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!--    <script src = "../dependencies/js/workOrder.js"></script>-->
-     <!--<script src = "../dependencies/javascript/CWorkOrder.js"></script>-->
+     <script src = "javascript/CWorkOrder.js"></script>
     </body>
 </html>
