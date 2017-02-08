@@ -2,7 +2,6 @@ body {
     width: 75%;
     padding: 5px;
     margin: auto auto 5%;
-
 }
 
 .title {
@@ -22,6 +21,9 @@ body {
     text-align: center;
     font-style: italic;
     color: darkgreen;
+}
+#errors{
+    color: red;
 }
 
 /* image styling */
