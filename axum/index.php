@@ -31,7 +31,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<span class="logo"><img src="images/GRimage.JPG" alt="Repair Shop Logo" /></span>
+						<span class="logo"><img src="images/grcRepairLogo.jpg" alt="Repair Shop Logo" /></span>
 						<h1>Green River PC Repair Shop</h1>
 					</header>
 
@@ -53,7 +53,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 										<p>The Green River PC Repair shop opened January 6, 2011 by Spunky. The PC Repair shop is completely student ran but is under faculty supervision. The students that work in the shop use the time they are there for some hands on, real world experience while also still getting an education. Some of the students may also volunteer their time to the shop.</p>
 	
 									</div>
-									<span class="image"><img src="images/placeHolderImage.JPG" alt="" /></span>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
 								</div>
 							</section>
 

@@ -1,0 +1,34 @@
+body {
+    width: 75%;
+    padding: 5px;
+    margin: auto auto 5%;
+    background-color: #5cb85c;
+}
+
+.title {
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.requiredFields {
+    color: red;
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 115%;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    color: darkgreen;
+}
+
+/* image styling */
+.logo {
+    height: 75%;
+    align: center;
+}
+.star {
+    height: 15%;
+)}

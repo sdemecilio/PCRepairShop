@@ -20,14 +20,13 @@
 <html>
 
 <body>
-<!--Creating nav bar -->
+
 <nav id="nav">
     <ul>
-        <li><a href="index.php">Our Story</a></li>
-        <li><a href = "shopRequirements.php">Shop Requirements</a></li>
-        <li><a href="forms.php">Forms</a></li>
-        <li><a href="contact.php">Contact</a></li>
-        <li><a href="admin/login.php">Admin/Tech Login</a></li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="../admin/users.php">Users</a></li>
+        <li><a href="../admin/newUser.php">Add User</a></li>
+        <li><a href="adminSelect.php" class = "active">Work Order List</a></li>
     </ul>
 </nav>
      

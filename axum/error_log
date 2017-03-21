@@ -108,22 +108,3 @@ Stack trace:
 [03-Mar-2017 15:09:48 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workOrderForms.php:20) in /home/pcrepair/public_html/working/workOrderForms.php on line 112
 [03-Mar-2017 15:12:30 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workOrderForms.php:20) in /home/pcrepair/public_html/working/workOrderForms.php on line 112
 [03-Mar-2017 15:12:48 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workOrderForms.php:20) in /home/pcrepair/public_html/working/workOrderForms.php on line 112
-[13-Mar-2017 12:18:21 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workOrderForms.php:20) in /home/pcrepair/public_html/working/workCon.php on line 192
-[13-Mar-2017 12:22:11 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate.php on line 3
-[13-Mar-2017 12:22:11 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate.php on line 3
-[13-Mar-2017 12:22:11 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/pcrepair/public_html/working/pdfGenerate.php on line 3
-[13-Mar-2017 12:23:29 America/Chicago] PHP Fatal error:  Class 'FPDF' not found in /home/pcrepair/public_html/working/pdfGenerate.php on line 3
-[18-Mar-2017 02:33:39 America/Chicago] PHP Warning:  require(../../../databaseConnect.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate/pdfGenerate.php on line 16
-[18-Mar-2017 02:33:39 America/Chicago] PHP Warning:  require(../../../databaseConnect.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate/pdfGenerate.php on line 16
-[18-Mar-2017 02:33:39 America/Chicago] PHP Fatal error:  require(): Failed opening required '../../../databaseConnect.php' (include_path='.:/opt/php54/lib/php') in /home/pcrepair/public_html/working/pdfGenerate/pdfGenerate.php on line 16
-[18-Mar-2017 02:44:04 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/pcrepair/public_html/working/success.php on line 67
-[18-Mar-2017 02:44:45 America/Chicago] PHP Parse error:  syntax error, unexpected '.' in /home/pcrepair/public_html/working/success.php on line 66
-[18-Mar-2017 02:46:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'pdfGenerate' (T_STRING), expecting ',' or ';' in /home/pcrepair/public_html/working/success.php on line 69
-[18-Mar-2017 02:58:48 America/Chicago] PHP Parse error:  syntax error, unexpected 'workOrderID' (T_STRING), expecting ',' or ';' in /home/pcrepair/public_html/working/success.php on line 78
-[18-Mar-2017 03:56:19 America/Chicago] PHP Parse error:  syntax error, unexpected 'catch' (T_CATCH) in /home/pcrepair/public_html/working/success.php on line 98
-[18-Mar-2017 23:17:33 America/Chicago] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/pcrepair/public_html/working/workCon.php on line 63
-[18-Mar-2017 23:18:50 America/Chicago] PHP Warning:  preg_match(): Compilation failed: missing ) at offset 131 in /home/pcrepair/public_html/working/workCon.php on line 63
-[18-Mar-2017 23:23:01 America/Chicago] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/pcrepair/public_html/working/workCon.php on line 63
-[20-Mar-2017 13:17:47 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate.php on line 2
-[20-Mar-2017 13:17:47 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate.php on line 2
-[20-Mar-2017 13:17:47 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/pcrepair/public_html/working/pdfGenerate.php on line 2
