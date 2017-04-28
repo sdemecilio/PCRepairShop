@@ -16,8 +16,8 @@
 	require('../../databaseConnect.php');
 	include('editConn.php');
 	
-	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	//$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+	//$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
 	$id = $_GET['workOrderID'];
 
@@ -128,7 +128,7 @@
 
 				<!-- Footer -->
 				<footer id="footer">
-					<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                    <p class="copyright">&copy; 2017 Team SAS</a>.</p>
 				</footer>
 
 		</div>

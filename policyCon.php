@@ -1,6 +1,6 @@
 <?php
-  
-  // request post method
+  require('../databaseConnect.php');
+    // request post method
   if($_SERVER["REQUEST_METHOD"] == "POST")
    {
             //not empty
@@ -128,15 +128,6 @@
             }
        
             if($valid){
-                //connection to database 
-                $servername="localhost";
-                $username= "pcrepair";
-                $password ="Capstone2017!";
-                $dbname="pcrepair_shop";
-   
-                 $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-
-                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
    
                 //Create Statement
                 $privacy= $_POST['privacy'];

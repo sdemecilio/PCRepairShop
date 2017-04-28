@@ -1,6 +1,7 @@
 <?php
-//including logcon.php
-include ("loginCon.php");
+/// connection
+require('../../databaseConnect.php');
+
 //validating user input
 $email= $_POST['email'];
 $name= $_POST['name'];

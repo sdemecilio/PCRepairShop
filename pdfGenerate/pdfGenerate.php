@@ -26,7 +26,7 @@
         function Header()
         {
             //logo
-            $this->Image('../images/grcRepairLogo.jpg', 10, 6, 30);
+            $this->Image('../images/grcRepairLogo.jpg', 10, 6, 45);
             $this->SetFont('Arial', 'B', 18);
             
             //move to the right - moves title section
@@ -36,7 +36,7 @@
             $this->Cell(0, 0, 'Green River Repair Shop', 'C');
             
             //line break
-            $this->Ln(10);
+            $this->Ln(20);
         }
         
         //page footer
@@ -93,7 +93,7 @@
         $pdf->Cell(20, 20, 'Computer Password: ' . $row['computer_password']);
         
         $pdf->Ln(10);
-        $pdf->Cell(85, 20, 'Ccleaner Removmal: ' . $row['ccleaner']);
+        $pdf->Cell(85, 20, 'Ccleaner Remove: ' . $row['ccleaner']);
         $pdf->Cell(50, 20, 'Customer Initials: ' . $row['customer_initials']);
         
         $pdf->Ln(10);

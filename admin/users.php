@@ -15,9 +15,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 //incuding connection to the database
 require('../../databaseConnect.php');
 
-$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+//$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 try
 {
@@ -104,7 +104,7 @@ catch(PDOException $e) {
 
     <!-- Footer -->
     <footer id="footer">
-        <p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+        <p class="copyright">&copy; 2017 Team SAS</a>.</p>
     </footer>
 
 </div>

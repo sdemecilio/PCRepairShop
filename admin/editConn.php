@@ -112,8 +112,8 @@
     {
         try
         {
-            $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            //$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+            //$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
             //grab variables
             $date_recieve = $_POST['date_recieve'];

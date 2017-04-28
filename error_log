@@ -127,3 +127,25 @@ Stack trace:
 [20-Mar-2017 13:17:47 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate.php on line 2
 [20-Mar-2017 13:17:47 America/Chicago] PHP Warning:  require(fpdf.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/pdfGenerate.php on line 2
 [20-Mar-2017 13:17:47 America/Chicago] PHP Fatal error:  require(): Failed opening required 'fpdf.php' (include_path='.:/opt/php54/lib/php') in /home/pcrepair/public_html/working/pdfGenerate.php on line 2
+[21-Mar-2017 02:04:33 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workCon.php:167) in /home/pcrepair/public_html/working/workCon.php on line 186
+[21-Mar-2017 02:24:58 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workCon.php:167) in /home/pcrepair/public_html/working/workCon.php on line 186
+[11-Apr-2017 13:30:32 America/Chicago] PHP Warning:  Illegal offset type in /home/pcrepair/public_html/working/workCon.php on line 161
+[11-Apr-2017 13:30:32 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workCon.php:161) in /home/pcrepair/public_html/working/workCon.php on line 190
+[13-Apr-2017 13:48:08 America/Chicago] PHP Warning:  Illegal offset type in /home/pcrepair/public_html/working/workCon.php on line 161
+[13-Apr-2017 13:48:08 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workCon.php:161) in /home/pcrepair/public_html/working/workCon.php on line 190
+[13-Apr-2017 13:48:38 America/Chicago] PHP Warning:  Illegal offset type in /home/pcrepair/public_html/working/workCon.php on line 161
+[13-Apr-2017 13:48:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/pcrepair/public_html/working/workCon.php:161) in /home/pcrepair/public_html/working/workCon.php on line 190
+[14-Apr-2017 13:02:03 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/pcrepair/public_html/working/success.php on line 117
+[16-Apr-2017 03:03:27 America/Chicago] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/pcrepair/public_html/working/success.php on line 70
+[16-Apr-2017 03:06:39 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/pcrepair/public_html/working/success.php on line 76
+[16-Apr-2017 03:27:54 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/pcrepair/public_html/working/success.php on line 75
+[16-Apr-2017 03:52:39 America/Chicago] PHP Catchable fatal error:  Object of class PDOStatement could not be converted to string in /home/pcrepair/public_html/working/success.php on line 76
+[16-Apr-2017 03:55:58 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::excute() in /home/pcrepair/public_html/working/success.php on line 75
+[16-Apr-2017 03:56:23 America/Chicago] PHP Fatal error:  Call to undefined method PDOStatement::excute() in /home/pcrepair/public_html/working/success.php on line 75
+[20-Apr-2017 13:36:30 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/pcrepair/public_html/working/workOrderForms.php on line 104
+[27-Apr-2017 12:50:48 America/Chicago] PHP Warning:  require(../../../databaseConnect.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/policyCon.php on line 2
+[27-Apr-2017 12:50:48 America/Chicago] PHP Warning:  require(../../../databaseConnect.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/working/policyCon.php on line 2
+[27-Apr-2017 12:50:48 America/Chicago] PHP Fatal error:  require(): Failed opening required '../../../databaseConnect.php' (include_path='.:/opt/php54/lib/php') in /home/pcrepair/public_html/working/policyCon.php on line 2
+[28-Apr-2017 13:33:13 America/Chicago] PHP Warning:  require(../../databaseConnect.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/policyCon.php on line 2
+[28-Apr-2017 13:33:13 America/Chicago] PHP Warning:  require(../../databaseConnect.php): failed to open stream: No such file or directory in /home/pcrepair/public_html/policyCon.php on line 2
+[28-Apr-2017 13:33:13 America/Chicago] PHP Fatal error:  require(): Failed opening required '../../databaseConnect.php' (include_path='.:/opt/php54/lib/php') in /home/pcrepair/public_html/policyCon.php on line 2

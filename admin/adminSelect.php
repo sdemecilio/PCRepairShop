@@ -43,7 +43,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
 		<link rel = "stylesheet" href = "https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
-		<link rel = "stylesheet" href = "admin.css">
+		<link rel = "stylesheet" href = "../css/adminMenu.css">
 		<link rel = "stylesheet" href = "../css/background.css">
 	</head>
 	
@@ -102,7 +102,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                        <p class="copyright">&copy; 2017 Team SAS</a>.</p>
 					</footer>
 
 		</div>
@@ -117,7 +117,7 @@
 			<script src="../assets/js/main.js"></script>
 			<script src="//code.jquery.com/jquery-1.12.4.js"></script>
 			<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-			<script src = "admin.js"></script>
+			<script src = "../js/admin.js"></script>
 </body>
 </html>
 

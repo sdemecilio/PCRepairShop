@@ -19,19 +19,43 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <!DOCTYPE html>
 <html>
 
-<body>
+<head>
+ <link rel = "stylesheet" href = "../css/adminMenu.css">
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-<!--creating admin nav bar-->
-<nav id="nav">
-    <ul>
-        <li><a href="../index.php">Home</a></li>
-        <li><a href="adminSelect.php" class = "active">Work Order List</a></li>  
-        <li><a href="../admin/users.php">Users</a></li>
-        <li><a href="../admin/register.php">Add User</a></li>
-        <li><a href="logout.php">Logout</a></li>
-    </ul>
+</head>
+ 
+<body>
+<!--Creating nav bar -->
+
+
+<nav>
+     <ul>
+     	
+
+     	<li><a href="../index.php">Forms</a></li>
+        <li><a href="../ourStory.php">Our story</a></li>
+        <li><a href = "../shopRequirements.php">Shop Requirements</a></li>        
+        <li><a href="../contact.php">Contact</a></li>
+        <li><a href="login.php">Admin/Tech Login</a></li>
+   </ul>
+   <div class="handle">Menu</div>
 </nav>
 
+<script>
+	$(".handle").on("click", function(){
+	
+    	    $("nav ul").toggleClass("showing");
+   });
+
+</script>
+
 </body>
-</html>
+</html> 
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
 
