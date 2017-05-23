@@ -124,7 +124,7 @@ include 'workCon.php';
                         <label><input type = "checkbox" name = "issues[]" value = "Mother Board">Mother Board</label>
                         <label><input type = "checkbox" name = "issues[]" value = "Software">Software</label>
                         <label><input type ="checkbox" name = "issues[]" value = "Other-" id = "other">Other</label>
-                        <input type = "text" name = "other_text" id = "other_text" placeholder = "Please explain your problem">
+                        <input type = "text" name = "issues[]" id = "other_text" placeholder = "Please explain your problem">
 
                         <p>
                             <input type = "submit" name = "submit" value = "Submit form" id = "submit">
