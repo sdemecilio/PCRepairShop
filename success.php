@@ -62,7 +62,7 @@
 										<header class="major">
 											<h2>Submission accepted!</h2>
 										</header>
-										<p>Your submission was accepted. Please review the information to verify that it is correct. </p>
+										<p><strong>Thank you for your submission, you can expect to hear from a Green River PC Repair Shop technician within 24 business hours, or you can contact us immediately to arrange a drop-off. </p></strong>
 
 										<?php											
 											try{
