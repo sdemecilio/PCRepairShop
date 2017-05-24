@@ -23,7 +23,7 @@ include 'workCon.php';
 
     <!-- Header -->
     <header id="header" class="alt">
-
+        <h1>Green River PC Repair Shop</h1>
     </header>
 
     <!-- Main -->
