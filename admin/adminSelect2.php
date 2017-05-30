@@ -12,28 +12,27 @@
 	
 	 */
 	
-		
 	require('../../../databaseConnect.php');
 	
 	session_start();
-			
+	
+	
 	try
 	{
 		//Selecting data 
 		$stmt = $conn->query("SELECT * FROM workOrder");
+	  
 		$stmt->setFetchMode(PDO::FETCH_OBJ); 
+
 		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		
 	}
 	 catch(PDOException $e) {
 	 echo "Error: " . $e->getMessage();	
 	}
 	
-	//$_SESSION['accessType'] = $accessType;
-	
-	if($_SESSION['accessType'] != 'admin'){
+	if($_SESSION['accessType'] != 'tech'){
 		header("Location:login.php");
-	}		
+	}	
 
 ?>
 <html>
@@ -62,7 +61,7 @@
 
 				<!-- Nav -->
 					<?php
-						include ('adminMenu.php');
+						include ('adminMenu2.php');
 					?>
 
 				<!-- Main -->
@@ -79,10 +78,9 @@
 												<th>Last Name</th>
 												<th>Green River ID</th>
 												<th>Date</th>
-												<th>Status</th>												
+												<th>Status</th>
 												<th>View </th>
-												<th>Edit </th>
-												
+												<th>Edit </th>												
 											</tr>
 										</thead>
 										<?php
@@ -93,13 +91,10 @@
 													echo "<td>" . $row['first_name'] . "</td>";
 													echo "<td>" . $row['last_name'] . "</td>";
 													echo "<td>" . $row['greenriverID'] . "</td>";
-													echo "<td>" .date("m-dY", strtotime($row['date_submitted'])) . "</td>";
-													
-													echo "<td>" . 
-													$row['wo_status'] . "</td>";
-													
-													echo "<td align = 'center'><a href = 'viewWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>View</a></td>";
-													echo "<td align = 'center'><a href = 'editWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>Edit</a></td>";													
+													echo "<td>" . $row['timestamp'] . "</td>";
+													echo "<td>" . $row['wo_status'] . "</td>";													
+													echo "<td align = 'center'><a href = 'viewWorkOrder2.php?workOrderID=" . $row['workOrderID'] . "'>View</a></td>";
+													echo "<td align = 'center'><a href = 'editWorkOrder2.php?workOrderID=" . $row['workOrderID'] . "'>Edit</a></td>";
 													
 												echo "</tr>";
 											}

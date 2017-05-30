@@ -13,11 +13,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  */
 
 //incuding connection to the database
-require('../../databaseConnect.php');
+require('../../../databaseConnect.php');
 
-//$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-
-//$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+session_start();
 
 try
 {
@@ -33,7 +31,12 @@ catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 
+if($_SESSION['accessType'] != 'admin'){
+		header("Location:login.php");
+	}
 ?>
+
+
 
 <html>
 <head>
@@ -45,7 +48,7 @@ catch(PDOException $e) {
     <!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
     <!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
     <link rel = "stylesheet" href = "https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css" />
-    <link rel = "stylesheet" href = "admin.css">
+    <link rel = "stylesheet" href = "../css/adminMenu.css">
     <link rel = "stylesheet" href = "../css/background.css">
 </head>
 
@@ -119,7 +122,7 @@ catch(PDOException $e) {
 <script src="../assets/js/main.js"></script>
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
 <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
-<script src = "admin.js"></script>
+<script src = "../js/admin.js"></script>
 </body>
 </html>
 

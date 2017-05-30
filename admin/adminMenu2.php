@@ -32,9 +32,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <nav>
      <ul>
         <li><a href="../index.php">Home</a></li>
-        <li><a href="adminSelect.php" class = "active">Work Order List</a></li>
-        <li><a href="../admin/users.php">Users</a></li>
-        <li><a href="../admin/register.php">Add User</a></li>
+        <li><a href="adminSelect2.php" class = "active">Work Order List</a></li>
         <li><a href="logout.php">Logout</a></li>
     </ul>
    <div class="handle">Menu</div>
@@ -55,5 +53,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <html>
 
 <body>
-
-

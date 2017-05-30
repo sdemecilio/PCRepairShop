@@ -62,7 +62,7 @@
 
 				<!-- Nav -->
 					<?php
-						include ('adminMenu.php');
+						include ('adminMenu2.php');
 					?>
 
 				<!-- Main -->
@@ -74,7 +74,7 @@
 
                                     <!--selecting each row from the work order table from the database-->
 									<?php								
-										echo "<h3><a href = 'adminSelect.php'><< Back</a></h3>";
+										echo "<h3><a href = 'adminSelect2.php'><< Back</a></h3>";
 										foreach ($result as $row)
 										{
 											echo "First Name: " . $row['first_name'] . "<br>";
