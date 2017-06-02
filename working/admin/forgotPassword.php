@@ -1,33 +1,39 @@
+
 <?php
 
-//validation for the admin login page
 require('../../../databaseConnect.php');
 
-session_start();
+    if (isset($_POST["forgotPass"])) {
+        try {
 
-if(isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = md5($_POST['password'] . "ALS52KAO09");
+            $email = $_POST["email"];
+            $sql = $conn->prepare("SELECT id FROM logins WHERE 'email=$email'");
+            //echo $email;
+            $query = $sql->execute();
 
-    //running SQL query
-    $sql = $conn->prepare("SELECT * from logins WHERE  username = ? AND password = ?");
-    $query = $sql->execute(array(
-        $username,
-        $password
-    ));
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        }
+        if ($query > 0) {
+            $str = "0123456789abcdefghijklmnopqrstuvwxyz";
+            $str = str_shuffle($str);
+            $str = substr($str, 0, 10);
+            $url = "http://pc-repair.greenrivertech.net/working/admin/resetPassword.php?tokens=$str&email=$email";
 
-    //getting each row
-    $count = $sql->rowCount();
+            mail($email, "Reset Password", "To reset your password, please visit this: $url", "From:pc-repair.greenrivertech.net");
 
-    if ($count == 1) {
-        $_SESSION['username'] = $username;
-        header("Location:adminSelect.php");
-        exit;
-    } else {
-        echo "You entered the incorrect login";
+            $sql = $conn->prepare("UPDATE logins SET tokens='$str' WHERE email='$email'");
+            $query = $sql->execute();
+            echo "Please check your email. An email is sent to you with a link to set your email.";
+            }
+            else {
+                echo "Please check your inputs";
+            }
     }
-}
+
 ?>
+
+
 
 <!DOCTYPE html>
 <html>
@@ -51,10 +57,6 @@ if(isset($_POST['submit'])) {
         <h1>Green River PC Repair Shop</h1>
     </header>
 
-    <!-- nav bar -->
-    <?php
-        include ('adminMenu.php');
-    ?>
     <!-- Main -->
     <div id="main">
 
@@ -65,28 +67,24 @@ if(isset($_POST['submit'])) {
 
                     <!--creating the login form-->
                     <form action= " " method="POST">
-                        <table>
-                            <tr>
-                                <td>Username</td>
-                                <td><input type="text" name="username"></td>
-                            </tr>
-                            <tr>
-                                <td>Password</td>
-                                <td><input type="password" name="password"></td>
-                            </tr>
-                        </table>
-                        <p><a href="http://pc-repair.greenrivertech.net/working/admin/forgotPassword.php">Forgot password?</p>
-                        <input type="submit" name="submit">
-                      </form>
+
+    <form action="forgotPassword.php" method="post">
+        <table>
+            <tr>
+                <td><input type="text" name="email" placeholder="Email"></td><br>
+                <td><input type="submit" name="forgotPass" value="Request Password"/></td>
+            </tr>
+        </table>
+    </form>
         </section>
     </div>
 </div>
 
-    <!-- Footer -->
-    <footer id="footer">
-        </section>
-        <p class="copyright">&copy; 2017 Team SAS</a>.</p>
-    </footer>
+<!-- Footer -->
+<footer id="footer">
+    </section>
+    <p class="copyright">&copy; 2017 Team SAS</a>.</p>
+</footer>
 
 </div>
 

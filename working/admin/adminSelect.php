@@ -30,6 +30,9 @@
 	 catch(PDOException $e) {
 	 echo "Error: " . $e->getMessage();	
 	}
+   // if($_SESSION['accessType'] != 'admin'){
+    //header("Location:login.php");
+
 	
 
 ?>
@@ -71,7 +74,6 @@
 									<table id="example" class="display" cellspacing="0" width="100%">
 										<thead>
 											<tr>
-												<th>OrderNumber</th>
 												<th>First Name</th>
 												<th>Last Name</th>
 												<th>Green River ID</th>
@@ -84,11 +86,10 @@
 											foreach ($result as $row)
 											{
 												echo "<tr>";
-													echo "<td>" . $row['workOrderID'] . "</td>";
 													echo "<td>" . $row['first_name'] . "</td>";
 													echo "<td>" . $row['last_name'] . "</td>";
-													echo "<td>" . $row['greenRiverID'] . "</td>";
-													echo "<td>" . $row['timestamp'] . "</td>";
+													echo "<td>" . $row['greenriverID'] . "</td>";
+													echo "<td>" . date('m/d/Y', strtotime($row['date_submitted'])) . "</td>";
 													echo "<td align = 'center'><a href = '#'>View</a></td>";
 													echo "<td align = 'center'><a href = 'editWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>Edit</a></td>";
 												echo "</tr>";
