@@ -12,7 +12,7 @@
 	
 	 */
 	
-	require('../../databaseConnect.php');
+	require('../../../databaseConnect.php');
 	
 	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
@@ -86,8 +86,8 @@
 											foreach ($result as $row)
 											{
 												echo "<tr>";
-													echo "<td>" . $row['first_name'] . "</td>";
-													echo "<td>" . $row['last_name'] . "</td>";
+													echo "<td>" . substr($row['first_name'], 0, 15) . "</td>";
+													echo "<td>" . substr($row['last_name'], 0, 15) . "</td>";
 													echo "<td>" . $row['greenriverID'] . "</td>";
 													echo "<td>" . date('m/d/Y', strtotime($row['date_submitted'])) . "</td>";
 													echo "<td align = 'center'><a href = '#'>View</a></td>";
@@ -96,17 +96,17 @@
 											}
 										?>
 									</table>
-								</div>
+								</div> <!-- end of content div -->
 							</section>
 
-					</div>
+					</div> <!-- end of main div -->
 
 				<!-- Footer -->
 					<footer id="footer">
                         <p class="copyright">&copy; 2017 Team SAS</a>.</p>
 					</footer>
 
-		</div>
+		</div> <!-- end of wrapper div -->
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
