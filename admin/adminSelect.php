@@ -80,6 +80,7 @@
 												<th>Date</th>
 												<th>View Work Order</th>
 												<th>Edit Work Order</th>
+												<th>Status</th>
 											</tr>
 										</thead>
 										<?php
@@ -90,8 +91,9 @@
 													echo "<td>" . substr($row['last_name'], 0, 15) . "</td>";
 													echo "<td>" . $row['greenriverID'] . "</td>";
 													echo "<td>" . date('m/d/Y', strtotime($row['date_submitted'])) . "</td>";
-													echo "<td align = 'center'><a href = '#'>View</a></td>";
+													echo "<td align = 'center'><a href = 'viewWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>View</a></td>";
 													echo "<td align = 'center'><a href = 'editWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>Edit</a></td>";
+													echo "<td>" . $row['wo_status'] . "</td>";
 												echo "</tr>";
 											}
 										?>
