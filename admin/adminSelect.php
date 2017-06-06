@@ -12,7 +12,7 @@
 	
 	 */
 	
-	require('../../../databaseConnect.php');
+	require('../../databaseConnect.php');
 	
 	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
