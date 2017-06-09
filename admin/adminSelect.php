@@ -12,28 +12,28 @@
 	
 	 */
 	
-		
-	require('../../../databaseConnect.php');
+	require('../../databaseConnect.php');
 	
-	session_start();
-			
+	$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
+	$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	
 	try
 	{
 		//Selecting data 
 		$stmt = $conn->query("SELECT * FROM workOrder");
+	  
 		$stmt->setFetchMode(PDO::FETCH_OBJ); 
+
 		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-		
 	}
 	 catch(PDOException $e) {
 	 echo "Error: " . $e->getMessage();	
 	}
+   // if($_SESSION['accessType'] != 'admin'){
+    //header("Location:login.php");
+
 	
-	//$_SESSION['accessType'] = $accessType;
-	
-	if($_SESSION['accessType'] != 'admin'){
-		header("Location:login.php");
-	}		
 
 ?>
 <html>
@@ -74,48 +74,41 @@
 									<table id="example" class="display" cellspacing="0" width="100%">
 										<thead>
 											<tr>
-												
 												<th>First Name</th>
 												<th>Last Name</th>
 												<th>Green River ID</th>
 												<th>Date</th>
-												<th>Status</th>												
-												<th>View </th>
-												<th>Edit </th>
-												
+												<th>View Work Order</th>
+												<th>Edit Work Order</th>
+												<th>Status</th>
 											</tr>
 										</thead>
 										<?php
 											foreach ($result as $row)
 											{
 												echo "<tr>";
-													
-													echo "<td>" . $row['first_name'] . "</td>";
-													echo "<td>" . $row['last_name'] . "</td>";
+													echo "<td>" . substr($row['first_name'], 0, 15) . "</td>";
+													echo "<td>" . substr($row['last_name'], 0, 15) . "</td>";
 													echo "<td>" . $row['greenriverID'] . "</td>";
-													echo "<td>" .date("m-dY", strtotime($row['date_submitted'])) . "</td>";
-													
-													echo "<td>" . 
-													$row['wo_status'] . "</td>";
-													
+													echo "<td>" . date('m/d/Y', strtotime($row['date_submitted'])) . "</td>";
 													echo "<td align = 'center'><a href = 'viewWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>View</a></td>";
-													echo "<td align = 'center'><a href = 'editWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>Edit</a></td>";													
-													
+													echo "<td align = 'center'><a href = 'editWorkOrder.php?workOrderID=" . $row['workOrderID'] . "'>Edit</a></td>";
+													echo "<td>" . $row['wo_status'] . "</td>";
 												echo "</tr>";
 											}
 										?>
 									</table>
-								</div>
+								</div> <!-- end of content div -->
 							</section>
 
-					</div>
+					</div> <!-- end of main div -->
 
 				<!-- Footer -->
 					<footer id="footer">
                         <p class="copyright">&copy; 2017 Team SAS</a>.</p>
 					</footer>
 
-		</div>
+		</div> <!-- end of wrapper div -->
 
 		<!-- Scripts -->
 			<script src="../assets/js/jquery.min.js"></script>
