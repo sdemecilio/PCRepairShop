@@ -15,10 +15,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 //incuding connection to the database
 require('../../../databaseConnect.php');
 
-//$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-
-//$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
 try
 {
     //Selecting data

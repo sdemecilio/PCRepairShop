@@ -30,10 +30,6 @@
 	 catch(PDOException $e) {
 	 echo "Error: " . $e->getMessage();	
 	}
-   // if($_SESSION['accessType'] != 'admin'){
-    //header("Location:login.php");
-
-	
 
 ?>
 <html>

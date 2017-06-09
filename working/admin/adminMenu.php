@@ -18,7 +18,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 <!DOCTYPE html>
 <html>
-
 <head>
  <link rel = "stylesheet" href = "../css/adminMenu.css">
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -27,8 +26,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
  
 <body>
 <!--Creating nav bar -->
-
-
 <nav>
      <ul>
         <li><a href="../index.php">Home</a></li>
@@ -50,10 +47,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 </body>
 </html> 
-
-<!DOCTYPE html>
-<html>
-
-<body>
-
 

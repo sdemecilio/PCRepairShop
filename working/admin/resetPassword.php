@@ -4,30 +4,20 @@
 require('../../../databaseConnect.php');
 if (isset($_POST["submit"])) {
     if (isset($_GET["email"]) && isset($_GET["tokens"])) {
-
-
         $email = $_GET["email"];
         $tokens = $_GET["tokens"];
-
         $sql = $conn->prepare("SELECT id FROM logins WHERE email='$email' AND tokens='$tokens'");
         $data = $sql->execute();
         if ($data > 0) {
-            //$str = "0123456789abcdefghijklmnopqrstuvwxyz";
-            //$str = str_shuffle($str);
-            //$str = substr($str, 0, 10);
-            //$newPassword = md5($str . "ALS52KAO09");
             $newPassword = md5($_POST["password"]. "ALS52KAO09");
-            //$password = $str;
-
             $sql = $conn->prepare("UPDATE logins SET password='$newPassword' WHERE email='$email'");
             $query = $sql->execute();
-            //echo "Your new password is: $str";
+            $message = "You successfuly reset your password.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
         } else {
             echo "Please check your link";
-
         }
-    } else {
-
+    }else {
         header("Location:login.php");
     }
 }
@@ -69,11 +59,11 @@ if (isset($_POST["submit"])) {
 
         <tr>
             <td> New Password:</td>
-            <td><input type="text" name="password"></td>
+            <td><input type="password" name="password"></td>
         </tr>
         <tr>
             <td>Confirm Password:</td>
-            <td><input type="text" name="confirmPassword"></td>
+            <td><input type="password" name="confirmPassword"></td>
         </tr>
 
 
