@@ -24,7 +24,8 @@ if(isset($_POST['submit'])) {
         header("Location:adminSelect.php");
         exit;
     } else {
-        echo "You entered the incorrect login";
+        $message = "You enetered the incorrect login";
+        echo "<script type='text/javascript'>alert('$message');</script>";
     }
 }
 ?>

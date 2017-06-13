@@ -5,10 +5,8 @@ require('../../../databaseConnect.php');
 
     if (isset($_POST["forgotPass"])) {
         try {
-
             $email = $_POST["email"];
             $sql = $conn->prepare("SELECT id FROM logins WHERE 'email=$email'");
-            //echo $email;
             $query = $sql->execute();
 
         } catch (PDOException $e) {
@@ -24,7 +22,9 @@ require('../../../databaseConnect.php');
 
             $sql = $conn->prepare("UPDATE logins SET tokens='$str' WHERE email='$email'");
             $query = $sql->execute();
-            echo "Please check your email. An email is sent to you with a link to set your email.";
+            $message = "Please check your email. An email is sent to you with a link to set your email.";
+            echo "<script type='text/javascript'>alert('$message');</script>";
+
             }
             else {
                 echo "Please check your inputs";
@@ -32,8 +32,6 @@ require('../../../databaseConnect.php');
     }
 
 ?>
-
-
 
 <!DOCTYPE html>
 <html>
