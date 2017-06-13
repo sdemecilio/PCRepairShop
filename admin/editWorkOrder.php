@@ -13,11 +13,15 @@
 	 */
 
 	//including db connection
-	require('../../../databaseConnect.php');
+	require('../../databaseConnect.php');
 	include('editConn.php');
 	
-	//$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-	//$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	session_start();
+	
+	if ($_SESSION['username'] == null)
+	{
+		header('Location:login.php');
+	}
 	
 	$id = $_GET['workOrderID'];
 
@@ -25,10 +29,13 @@
 	{
 		//Selecting data 
 		$stmt = $conn->query("SELECT * FROM workOrder WHERE workOrderID =" . $id);
+		$stmtResult = $conn->query("SELECT accessType FROM logins WHERE username = '" . $_SESSION['username'] . " ' ");
 	  
 		$stmt->setFetchMode(PDO::FETCH_OBJ);
+		$stmtResult->setFetchMode(PDO::FETCH_OBJ);
 
 		$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+		$accessResult = $stmtResult->fetchAll(PDO::FETCH_ASSOC);
 	}
 	 catch(PDOException $e) {
 	 echo "Error: " . $e->getMessage();	
@@ -62,7 +69,17 @@
 
 				<!-- Nav -->
 					<?php
-						include ('adminMenu.php');
+						foreach ($accessResult as $row)
+						{
+							if($row['accessType'] == 'tech')
+							{
+								include ('techMenu.php');
+							}
+							else
+							{
+								include ('adminMenu.php');
+							}
+						}
 					?>
 
 				<!-- Main -->
