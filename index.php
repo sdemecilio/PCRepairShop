@@ -1,12 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Axum
- * Date: 2/17/2017
- * Time: 11:09 AM
- */
-?>
-
 
 <?php
 /**
