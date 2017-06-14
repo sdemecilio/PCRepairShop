@@ -20,6 +20,7 @@
 
                 $errors['privacyErr'] = "Your initials cannot be empty";
                 $valid=false;
+                
              //if they intials do not match
             } else{
                $privacy=$_POST['privacy'];
@@ -128,6 +129,7 @@
             }
        
             if($valid){
+                
    
                 //Create Statement
                 $privacy= $_POST['privacy'];
