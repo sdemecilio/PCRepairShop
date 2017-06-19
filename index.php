@@ -102,7 +102,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
         <!-- Footer -->
         <footer id="footer">
             </section>
-            <p class="copyright">&copy; 2017 Team SAS</a>.</p>
+            <p class="copyright">&copy; 2017 Team SAS</p>
         </footer>
     
     </div>

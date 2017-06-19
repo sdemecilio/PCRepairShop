@@ -48,8 +48,3 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 </body>
 </html> 
-
-<!DOCTYPE html>
-<html>
-
-<body>

@@ -99,7 +99,7 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-                        <p class="copyright">&copy; 2017 Team SAS</a>.</p>
+                        <p class="copyright">&copy; 2017 Team SAS</p>
 					</footer>
 
 		</div>
